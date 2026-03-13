@@ -9,7 +9,7 @@ function App() {
   const [jokes,setJokes]=useState([])
 
   useEffect(()=>{
-  axios.get('http://localhost:3000/api/jokes')
+  axios.get('https://testing-backend-eight-plum.vercel.app/api/jokes')
   .then((response)=>{
     setJokes(response.data)
   })
