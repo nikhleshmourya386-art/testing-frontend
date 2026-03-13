@@ -9,7 +9,7 @@ function App() {
   const [jokes,setJokes]=useState([])
 
   useEffect(()=>{
-  axios.get('/api/jokes')
+  axios.get('http://localhost:3000/api/jokes')
   .then((response)=>{
     setJokes(response.data)
   })
